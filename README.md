@@ -4,4 +4,4 @@ PluginMaker
 Android plugin generator
 
 
-If uyouhave ant ideas, make issues or milestones.
+If u you have ant ideas, make issues or milestones.
