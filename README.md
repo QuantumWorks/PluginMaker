@@ -1,7 +1,7 @@
 PluginMaker
 ===========
 
-Android plugin generator
+Android PocketMine plugin generator
 
 
-If uyouhave ant ideas, make issues or milestones.
+If you have any ideas, make issues and milestones.
