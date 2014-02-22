@@ -1,9 +1,10 @@
-package droidPluginGen.pluginGen.generator;
+package quantumworks.droidPluginGen.pluginGen.generator;
 
 import java.io.*;
 
-import droidPluginGen.pluginGen.generator.objects.Event;
-import droidPluginGen.pluginGen.generator.objects.Function;
+import quantumworks.droidPluginGen.pluginGen.generator.objects.Event;
+import quantumworks.droidPluginGen.pluginGen.generator.objects.Function;
+
 
 public class Generator extends Object{
 	public Event[] events;
