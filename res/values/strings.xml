@@ -4,5 +4,14 @@
     <string name="app_name">PluginGenerator</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="noIO">Please mount your external storage (SDCard). Otherwise, we cannot save your project for you.</string>
+    <string name="MainActivity_newProject">Create new project</string>
+    <string name="MainActivity_openProject">Open a created project</string>
+    <!-- TODO better translation -->
+    <!-- TODO multi language translation -->
+
+    <string name="title_activity_project_creator">Project Creator</string>
+    <string name="title_activity_project_selector">Project Selector</string>
+    <string name="title_activity_project_main_view">Project - Main View</string>
 
 </resources>
