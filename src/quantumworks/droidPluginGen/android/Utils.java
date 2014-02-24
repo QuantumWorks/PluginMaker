@@ -1,4 +1,4 @@
-package quantumworks.droidPluginGen.pluginGen.android;
+package quantumworks.droidPluginGen.android;
 
 import java.io.BufferedReader;
 import java.io.File;

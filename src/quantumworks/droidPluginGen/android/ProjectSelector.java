@@ -1,6 +1,8 @@
-package quantumworks.droidPluginGen.pluginGen.android;
+package quantumworks.droidPluginGen.android;
 
 import java.io.File;
+
+import quantumworks.droidPluginGen.pluginGen.android.R;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -16,16 +18,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class ProjectSelector extends Activity implements View.OnClickListener{
-
 	public static final String INTENT_TAG_PROJECT = "quantumwworks.doroidPluginGen.pluginGen.android.ProjectSelector.project.name";
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(getLayout());
 		setupActionBar();
 	}
-
 	private android.view.View getLayout(){
 		LinearLayout ll = new LinearLayout(this);
 		ll.setOrientation(LinearLayout.VERTICAL);
@@ -43,7 +42,6 @@ public class ProjectSelector extends Activity implements View.OnClickListener{
 		}
 		return ll;
 	}
-
 	private String[] projectList(){
 		File dir = Utils.projectDir();
 		String[] ret = {};
@@ -58,20 +56,17 @@ public class ProjectSelector extends Activity implements View.OnClickListener{
 		}
 		return ret;
 	}
-
 	@TargetApi(Build.VERSION_CODES.HONEYCOMB)
 	private void setupActionBar() {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 	}
-
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.project_selector, menu);
 		return true;
 	}
-
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
@@ -81,10 +76,8 @@ public class ProjectSelector extends Activity implements View.OnClickListener{
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
 	@Override
 	public void onClick(View v) {
 		startActivity(new android.content.Intent(this, ProjectMainView.class).putExtra(INTENT_TAG_PROJECT, projectList()[v.getId() - 0x80000000]));
 	}
-
 }

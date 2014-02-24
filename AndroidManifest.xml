@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="quantumworks.droidPluginGen.pluginGen.android.MainActivity"
+            android:name="quantumworks.droidPluginGen.android.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,23 +23,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="quantumworks.droidPluginGen.pluginGen.android.ProjectCreator"
+            android:name="quantumworks.droidPluginGen.android.ProjectCreator"
             android:label="@string/title_activity_project_creator"
-            android:parentActivityName="quantumworks.droidPluginGen.pluginGen.android.MainActivity" >
+            android:parentActivityName="quantumworks.droidPluginGen.android.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="quantumworks.droidPluginGen.pluginGen.android.MainActivity" />
         </activity>
         <activity
-            android:name="quantumworks.droidPluginGen.pluginGen.android.ProjectSelector"
+            android:name="quantumworks.droidPluginGen.android.ProjectSelector"
             android:label="@string/title_activity_project_selector"
-            android:parentActivityName="quantumworks.droidPluginGen.pluginGen.android.MainActivity" >
+            android:parentActivityName="quantumworks.droidPluginGen.android.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="quantumworks.droidPluginGen.pluginGen.android.MainActivity" />
         </activity>
         <activity
-            android:name="quantumworks.droidPluginGen.pluginGen.android.ProjectMainView"
+            android:name="quantumworks.droidPluginGen.android.ProjectMainView"
             android:label="@string/title_activity_project_main_view" >
         </activity>
     </application>

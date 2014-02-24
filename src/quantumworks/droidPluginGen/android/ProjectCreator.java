@@ -1,5 +1,6 @@
-package quantumworks.droidPluginGen.pluginGen.android;
+package quantumworks.droidPluginGen.android;
 
+import quantumworks.droidPluginGen.pluginGen.android.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
